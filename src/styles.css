@@ -1,1 +1,103 @@
-/* You can add global styles to this file, and also import other style files */
+/* Default font sizes for all screen sizes */
+span {
+    font-size: 0.8rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  i{
+  font-size: 1rem;
+  }
+
+  .link:hover{
+    color:rgba(0, 0, 255, 0.71);
+    text-decoration: underline;
+  }
+  
+  /* Mobile (Small Screens) */
+  @media (min-width: 475.98px) {
+    span {
+      font-size: 1rem;
+    }
+    
+    p {
+      font-size: 1.2rem;
+    }
+    
+    h1 {
+      font-size: 2.2rem;
+    }
+    
+    h2 {
+      font-size: 1.8rem;
+    }
+    
+    h3 {
+      font-size: 1.4rem;
+    }
+  
+    i{
+    font-size: 1.2rem;
+    }
+  }
+  
+  /* Tablet (Medium Screens) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    span {
+      font-size: 0.9rem;
+    }
+  
+    p {
+      font-size: 1.2rem;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    h3 {
+      font-size: 1.4rem;
+    }
+  }
+  
+  /* Desktop (Large Screens) */
+  @media (min-width: 1024px) {
+    span {
+      font-size: 1rem;
+    }
+  
+    p {
+      font-size: 1.4rem;
+    }
+  
+    h1 {
+      font-size: 3rem;
+    }
+  
+    h2 {
+      font-size: 2.2rem;
+    }
+  
+    h3 {
+      font-size: 1.6rem;
+    }
+  }
+  

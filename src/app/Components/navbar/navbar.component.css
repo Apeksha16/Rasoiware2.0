@@ -1,0 +1,26 @@
+.container {
+  color: white; 
+}
+
+.nav-links span {
+  cursor: pointer;
+}
+
+.nav-links span:hover{
+    color: #f4a460;
+}
+
+.icons i {
+  cursor: pointer;
+}
+
+.icons i:hover{
+    color: #f4a460;
+}
+.bg-fluid{
+    background-color: #333; 
+
+}
+.nav-links{
+  max-width: 500px;
+}
