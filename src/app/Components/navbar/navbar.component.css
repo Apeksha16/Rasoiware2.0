@@ -1,13 +1,13 @@
 .container {
-  color: white; 
+  color: white;
 }
 
-.nav-links span {
+.nav-links p {
   cursor: pointer;
 }
 
-.nav-links span:hover{
-    color: #f4a460;
+.nav-links p:hover{
+    color: var(--yellow);
 }
 
 .icons i {
@@ -15,10 +15,10 @@
 }
 
 .icons i:hover{
-    color: #f4a460;
+    color: var(--yellow);
 }
 .bg-fluid{
-    background-color: #333; 
+    background-color:var(--grey);
 
 }
 .nav-links{

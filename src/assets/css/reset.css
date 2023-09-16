@@ -1,0 +1,98 @@
+body, h1, h2, h3, p, ul, ol, li, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5% ;
+}
+
+/* For Mobile Devices */
+h1{
+  font-size: 2rem;
+}
+h2{
+  font-size: 1.6rem;
+}
+h3{
+  font-size: 1.4rem;
+}
+p,li{
+  font-size: 1.2rem;
+}
+span{
+  font-size: 1rem;
+}
+i{
+  font-size: 1.2rem;
+}
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* For Tablet Devices */
+
+@media (min-width:575.98px) {
+
+  h1{
+    font-size: 2.4rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  h3{
+    font-size: 1.6rem;
+  }
+  p,li,i{
+    font-size: 1.4rem;
+  }
+  span{
+    font-size: 1.2rem;
+  }
+
+}
+
+/* For Laptop & Desktop Devices */
+
+@media (min-width:767.98px) {
+
+  h1{
+    font-size: 2.8rem;
+  }
+  h2{
+    font-size: 2.4rem;
+  }
+  h3{
+    font-size: 2rem;
+  }
+  p,li,i{
+    font-size: 1.6rem;
+  }
+  span{
+    font-size: 1.4rem;
+  }
+
+}
+
+/* For Desktop and large monitor Devices */
+
+@media (min-width:991.98px) {
+
+  h1{
+    font-size: 3rem;
+  }
+  h2{
+    font-size: 2.6rem;
+  }
+  h3{
+    font-size: 2.2rem;
+  }
+  p,li,i{
+    font-size: 1.8rem;
+  }
+  span{
+    font-size: 1.6rem;
+  }
+
+}
