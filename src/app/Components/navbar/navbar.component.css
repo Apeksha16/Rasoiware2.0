@@ -7,7 +7,7 @@
 }
 
 .nav-links p:hover{
-    color: var(--yellow);
+    color: var(--blue);
 }
 
 .icons i {
@@ -15,10 +15,10 @@
 }
 
 .icons i:hover{
-    color: var(--yellow);
+    color: var(--blue);
 }
 .bg-fluid{
-    background-color:var(--grey);
+    background-color:var(--black);
 
 }
 .nav-links{
