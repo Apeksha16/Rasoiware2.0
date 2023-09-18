@@ -6,7 +6,7 @@
   cursor: pointer;
 }
 
-.nav-links p:hover{
+.nav-links .nav-item:hover{
     color: var(--blue);
 }
 
