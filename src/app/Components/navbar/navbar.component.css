@@ -2,11 +2,11 @@
   background-color:var(--black);
 
 }
-.navbar {
+.my-nav {
   color: white;
 
 }
 
-.navbar-details, .nav-links{
+/* .navbar-details, .nav-links{
   cursor: pointer;
-}
+} */
