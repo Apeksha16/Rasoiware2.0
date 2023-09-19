@@ -10,32 +10,12 @@ export class NavbarComponent {
     logoPath: 'assets/rasoiware.png',
     links: [
       {
-        name: 'Home',
+        name: 'Eng',
         path: '',
         isShow: false,
       },
       {
-        name: 'Shop',
-        path: '',
-        isShow: false,
-      },
-      {
-        name: 'Product',
-        path: '',
-        isShow: false,
-      },
-      {
-        name: 'Blog',
-        path: '',
-        isShow: false,
-      },
-      {
-        name: 'About',
-        path: '',
-        isShow: false,
-      },
-      {
-        name: 'Contact',
+        name: 'Location',
         path: '',
         isShow: false,
       },
@@ -45,7 +25,7 @@ export class NavbarComponent {
   // isShow: boolean = false;
 
   onMouseOver(item: string, i: number) {
-    if (item === 'Shop' || item === 'Product' || item === 'Home') {
+    if (item === 'Eng' || item === 'Location') {
       this.config.links[i].isShow = true;
     }
   }

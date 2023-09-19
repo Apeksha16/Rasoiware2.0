@@ -1,0 +1,27 @@
+.container {
+    color: white;
+  }
+  
+  .nav-links p {
+    cursor: pointer;
+  }
+  
+  .nav-links .nav-item:hover{
+      color: var(--blue);
+  }
+  
+  .icons i {
+    cursor: pointer;
+  }
+  
+  .icons i:hover{
+      color: var(--blue);
+  }
+  .bg-fluid{
+      background-color:var(--black);
+  
+  }
+  .nav-links{
+    max-width: 500px;
+  }
+  

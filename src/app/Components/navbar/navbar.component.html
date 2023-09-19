@@ -1,38 +1,36 @@
-<section class="container-fluid bg-fluid">
-  <div class="navbar container">
-    <div class="row w-100">
-      <div class="logo col-2">
-        <img [src]="config.logoPath" class="col-4" alt="Logo">
-      </div>
-      <div class="col-8 d-flex justify-content-center">
-        <div class="nav-links row ">
-          <div *ngFor="let link of config.links; let i = index;" class="col d-flex align-items-center">
-            <div class="dropdown" [ngClass]="link.isShow ? 'show':''">
-              <div class="d-flex gap-3 align-items-center nav-item" data-toggle="dropdown"
-                (mouseover)="onMouseOver(link.name,i)" (mouseout)="link.isShow = false;" aria-haspopup="true"
-                [attr.aria-expanded]="link.isShow">
-                <p>{{link.name}}</p>
-                <i class="fa-solid fa-caret-down"
-                  *ngIf="link.name == 'Shop' || link.name == 'Home' || link.name == 'Product'"></i>
-              </div>
-              <div class="dropdown-menu" [ngClass]="link.isShow ? 'show':''" (mouseover)="link.isShow = true;"
-                (mouseout)="link.isShow = false;">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </div>
+<section class="container-fluid bg-fluid d-flex justify-content-center align-items-center">
+  <div class="navbar p-2 container row gap-3 gap-md-0">
+    <div class="d-flex align-items-center justify-content-center justify-content-md-start col-12 mt-2 col-md-3">
+      <i class="fas fa-phone me-2"></i>
+      <span class="mb-0 ">+91 7668804527</span>
+    </div>
+    <div class="text-center navbar-details d-none d-sm-block col-12 col-md-6">
+      <span class="mb-0">Get 50% off on Selected items | Shop Now</span> 
+    </div>
+    <div class="nav-links row col-12 col-md-3 ">
+      <div class="col-3 d-md-none"></div>
+      <div class="col-3 col-md-6 d-flex align-items-center justify-content-md-end " *ngFor="let link of config.links; let i = index;" [ngClass]="i==0 ? 'justify-content-start': 'justify-content-end' ">
+        <div class="dropdown" [ngClass]="link.isShow ? 'show' : ''">
+          <div class="d-flex gap-3 align-items-center nav-item" data-toggle="dropdown"
+            (mouseover)="onMouseOver(link.name,i)" (mouseout)="link.isShow = false;" aria-haspopup="true"
+            [attr.aria-expanded]="link.isShow">
+            <span>{{link.name}}</span>
+            <i class="fa-solid fa-caret-down" *ngIf="link.name == 'Eng' || link.name == 'Location'"></i>
+          </div>
+          <div class="dropdown-menu" [ngClass]="link.isShow ? 'show' : ''" (mouseover)="link.isShow = true;"
+            (mouseout)="link.isShow = false;">
+            <a class="dropdown-item" href="#">{{ link.name == 'Eng' ? 'French' : 'Paris' }}</a>
+            <a class="dropdown-item" href="#">{{ link.name == 'Eng' ? 'German' : 'Chicago' }}</a>
+            <a class="dropdown-item" href="#">{{ link.name == 'Eng' ? 'Spanish' : 'Dubai' }}</a>
           </div>
         </div>
       </div>
-      <div class="icons col-2 d-flex justify-content-end gap-4 align-items-center">
-        <i class="fas fa-cog"></i>
-        <i class="fas fa-shopping-cart"></i>
-      </div>
+      <div class="col-3 d-md-none"></div>
     </div>
   </div>
 </section>
 
-<div>
-  <app-dropdown></app-dropdown>
-</div>
+0 - xs - true 
+576 - sm - true
+768 - md - false
+992 - lg
